@@ -1,0 +1,30 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg {
+    background-color: rgb(244, 247, 255);
+}
+
+.common-width {
+    width: 1300px;
+
+}
+
+.section-gap {
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2;
+}
+
+.size {
+    width: 900px;
+    height: 918px;
+    background-color: white;
+}
