@@ -16,15 +16,40 @@
 .section-gap {
     margin-top: 20px;
 }
+.bg-gradient{
+    background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 2;
+    justify-content: space-around;
+    gap: 4;
+    
 }
 
 .size {
-    width: 900px;
-    height: 918px;
+    width: 1000px;
+    height: 850px;
+    background-color: white;
+    
+}
+.activity-design{
+    width: 300px;
+    height: 850px;
     background-color: white;
 }
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.card{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 3px;
+    }
