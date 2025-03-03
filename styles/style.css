@@ -53,3 +53,16 @@
         align-items: flex-start;
         gap: 3px;
     }
+
+    .p-style{
+        /* class="bg-slate-100 ml-6 mr-4 rounded-xl text-sm font-light px-3 py-4" */
+        background-color: rgb(244, 247, 255);
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 16px;
+        font-weight: 200;
+        font-size: medium;
+        padding-bottom: 20px;
+        padding-left: 15px;
+
+    }
