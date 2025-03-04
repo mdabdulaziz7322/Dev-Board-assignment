@@ -6,6 +6,9 @@ let convertedFinishTasks = parseInt(taskFinished);
 let currentTime = new Date();
 let formattedTime = currentTime.toLocaleTimeString();
 
+
+
+
 for (const button of buttons) {
     button.addEventListener('click', function () {
         console
@@ -19,19 +22,6 @@ for (const button of buttons) {
         if (convertedTask == 0) {
             alert('congrats!!! You have completed all the current task');
         }
-        const text = document.getElementsByClassName('text').innerText;
-        const activityLog = document.getElementById('activity-log');
-        const p = document.createElement("p");
-        p.classList.add('p-style');
-        p.innerText = `
-        You have Complete The Task ${text} at ${formattedTime} 
-        `
-        activityLog.appendChild(p);
-        document.getElementById('clear-btn').addEventListener('click', function(){
-            activityLog.removeChild(p);
-
-        
-        })
         
         
 
