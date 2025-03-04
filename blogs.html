@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body class="bg poppins-regular">
+    <section class="blog-width flex justify-between items-center gap-3 bg-white rounded-2xl px-5 py-3 mt-8 mx-auto shadow-sm">
+        <div class="flex justify-center items-center gap-2">
+            <img class="w-10" src="assets/logo.png" alt="">
+            <h3 class="text-2xl">Dev <SPan class="font-bold">Board</SPan></h3>
+        </div>
+            <button class="ml-3 text-white bg-blue-700 rounded-xl py-3 px-4 mt-3 mb-3 font-semibold" id="back-btn">Back to Desk</button>
+    </section>
+    <h1 class="text-2xl text-center mt-5 font-bold">Blogs</h1>
+    <div class="blog-width bg-white mx-auto mt-10 shadow-xs">
+<h1 class="text-xl font-semibold p-4">Question-1: What are the different ways to select an element in the DOM?</h1>
+<hr class="mt-1 mb-1 border-dashed">
+<p class="text-lg font-medium text-slate-400 p-4">The ways of select an element in the DOM are getElementById(), which selects an element by its unique ID; getElementsByClassName(), which selects all elements with a specified class name; and getElementsByTagName(), which selects elements by their tag name. For more complex selections, querySelector() can be used to select the first matching element based on a CSS-style selector, while querySelectorAll()</p>
+    </div>
+    <div class="blog-width bg-white mx-auto mt-10 shadow-xs">
+<h1 class="text-xl font-semibold p-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+<hr class="mt-1 mb-1 border-dashed">
+<p class="text-lg font-medium text-slate-400 p-4">The innerHTML property retrieves or sets the HTML content inside an element, including any nested HTML tags. On the other hand, innerText returns or modifies the visible text content of an element, excluding any HTML tags and taking CSS styles (like display: none) into account. textContent, unlike innerText, retrieves or sets all the text inside an element without considering CSS styles and is faster because it doesn't account for the rendered state of the element.</p>
+    </div>
+    <div class="blog-width bg-white mx-auto mt-10 shadow-xs">
+<h1 class="text-xl font-semibold p-4">Question-3: What is event delegation in the DOM?</h1>
+<hr class="mt-1 mb-1 border-dashed">
+<p class="text-lg font-medium text-slate-400 p-4">Event delegation in the DOM is a technique where a single event listener is added to a parent element to manage events for child elements. Instead of attaching an event listener to each individual child, the parent element listens for events that bubble up from the child elements, and then determines which child was the target of the event.</p>
+    </div>
+    <div class="blog-width bg-white mx-auto mt-10 shadow-xs">
+<h1 class="text-xl font-semibold p-4">Question-4: What is event bubbling in the DOM?</h1>
+<hr class="mt-1 mb-1 border-dashed">
+<p class="text-lg font-medium text-slate-400 p-4">Event bubbling is a concept in the DOM where an event triggered on an element propagates upward through the DOM hierarchy, starting from the target element and moving towards the root. This means that if an event occurs on a nested element, it will trigger all the event listeners on its parent elements as well, unless propagation is stopped.</p>
+    </div>
+    <div class="blog-width bg-white mx-auto mt-10 shadow-xs mb-10">
+<h1 class="text-xl font-semibold p-4">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+<hr class="mt-1 mb-1 border-dashed">
+<p class="text-lg font-medium text-slate-400 p-4">To create elements using JavaScript, I can use the document.createElement() method, which generates a new HTML element. Once created, I can append the element to the DOM using appendChild() or insertBefore(), specifying the parent element where it should be added. To remove an element, I can use the removeChild() method on the parent element or remove() on the element itself to delete it from the DOM.</p>
+    </div>
+    <script src="script.js/blog.js"></script>
+</body>
+</html>
