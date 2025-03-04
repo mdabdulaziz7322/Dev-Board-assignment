@@ -19,7 +19,7 @@ for (const button of buttons) {
         if (convertedTask == 0) {
             alert('congrats!!! You have completed all the current task');
         }
-        // const text = document.getElementsByClassName('text').innerText;
+        const text = document.getElementsByClassName('text').innerText;
         const activityLog = document.getElementById('activity-log');
         const p = document.createElement("p");
         p.classList.add('p-style');
@@ -27,10 +27,12 @@ for (const button of buttons) {
         You have Complete The Task ${text} at ${formattedTime} 
         `
         activityLog.appendChild(p);
-
         document.getElementById('clear-btn').addEventListener('click', function(){
             activityLog.removeChild(p);
+
+        
         })
+        
         
 
 
