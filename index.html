@@ -28,7 +28,7 @@
                 <h1 class="font-bold text-3xl"><span id="finished-tasks">23</span></h1>
             </div>
             <div class="bg-slate-100 py-3 px-3 rounded-full cursor-pointer" id="bg-color">
-                <img  src="assets/theme-btn.png" alt="">
+                <img src="assets/theme-btn.png" alt="">
             </div>
         </div>
     </section>
@@ -43,22 +43,26 @@
                             <h1 class="font-bold text-3xl"> <span id="remaining-tasks">6</span></h1>
                         </div>
                     </div>
-                    <div id="blog-page" class="flex items-center bg-gradient py-3 px-2 mt-6 ml-3 rounded-xl cursor-pointer" >
-                        <img  class="ml-3" src="assets/board.png" alt="">
+                    <div id="blog-page"
+                        class="flex items-center bg-gradient py-3 px-2 mt-6 ml-3 rounded-xl cursor-pointer">
+                        <img class="ml-3" src="assets/board.png" alt="">
                         <p class="text-white text-2xl px-7 py-2">Discover Something New Today!</p>
                     </div>
                     <div class="flex items-center gap-3 bg-slate-100 py-3 px-2 mt-6 ml-3 mr-4 rounded-xl">
                         <img class="px-4" src="assets/calender.png" alt="">
                         <div>
-                            <p>Wed ,</p>
-                            <p class="text-xl font-semibold">Jul 28 2025</p>
+                            <div class="flex gap-1 ">
+                                <p class="text-xl font-base" id="current-day">Wed ,</p>
+                                <p class="text-xl font-medium">,</p>
+                            </div>
+                            <p class="text-xl font-semibold" id="current-date">Jul 28 2025</p>
                         </div>
 
                     </div>
                 </div>
                 <hr class="mt-5 border-dashed">
 
-                <div class=" grid grid-cols-3 gap-5 mx-auto ml-3 mr-0 mt-3">
+                <div id="card-container" class=" grid grid-cols-3 gap-5 mx-auto ml-3 mr-0 mt-3">
                     <div id="card-1" class="bg-slate-100 card mt-5 rounded-xl ">
                         <h3 class="py-2 px-3 rounded-xl bg-white text-base ml-5 mt-3">ShopEase</h3>
                         <h1 class="ml-5 font-medium text-xl"><span id="intro1">Fix Mobile Button Issue </span></h1>
@@ -162,20 +166,21 @@
                 <h1 class="ml-5 font-medium text-xl mt-5">Activity Log </h1>
             </div>
             <button id="clear-btn" class="ml-3 text-white bg-blue-700 rounded-xl py-2 px-4 mt-3">Clear History</button>
-            <hr class="border-dashed border-slate-400">
+                <p class="activity-list" id="activity-list">
+                </p>
+        
 
-            <p class="activity-list" id="activity-list">
-            </p>
 
         </section>
     </section>
-    
+
     <script src="script.js/backgroundColor.js"></script>
     <script src="script.js/utility.js"></script>
     <script src="script.js/button.js"></script>
     <script src="script.js/activity.js"></script>
     <script src="script.js/blog.js"></script>
-    
+    <script src="script.js/currentDate.js"></script>
+
 
 </body>
 

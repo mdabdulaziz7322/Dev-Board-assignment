@@ -11,7 +11,6 @@ let formattedTime = currentTime.toLocaleTimeString();
 
 for (const button of buttons) {
     button.addEventListener('click', function () {
-        console
         alert('Board Updated Successfully');
         convertedTask = convertedTask - 1;
         document.getElementById('remaining-tasks').innerText = convertedTask;
